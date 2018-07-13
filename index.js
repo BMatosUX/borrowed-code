@@ -103,7 +103,7 @@ const suspects = createArr(mrGreen, drOrchid, victorPlum, kasandraScarlet, eleon
 const weapons = createArr(rope, knife, candlestick, dumbbell, poison, axe, bat, trophy, pistol);
 
 // array of rooms is already given
-var rooms = [
+const rooms = [
     "dining room", "conservatory", "kitchen", "study","library",
     "billiard room", "lounge", "ballroom","hall", "spa", "living room",
     "observatory", "theater", "guest house", "patio"
@@ -112,8 +112,8 @@ var rooms = [
 // create new instance of Game  
 const game = new Game(weapons, suspects, rooms);
 
-var name = prompt("Insert your name:");
-var confirmName= prompt(alert("If you are seeing this message you are about to reveal confidential information regarding mysterious murder. Please confirm your name:"));
+const name = prompt("Insert your name:");
+const confirmName= prompt(alert("If you are seeing this message you are about to reveal confidential information regarding mysterious murder. Please confirm your name:"));
  
 if (name.toUpperCase() === confirmName.toUpperCase()){
     // if true, invoke revealMystery
